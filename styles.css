@@ -1,0 +1,185 @@
+* {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Slab', serif;
+    margin: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://www.kingarthurbaking.com/sites/default/files/inline-images/cafe.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header & Navbar */
+
+header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 2rem;
+    color: white;
+}
+
+.feature_icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sitetitle {
+    font-weight: bold;
+    width: 50%;
+    display: flex;
+    align-content: space-between;
+}
+
+.navlist li {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin: 20px;
+    position: relative;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: .025rem;
+}
+
+.navlist li a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ab9078;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+} 
+
+.navlist li a:hover::after {
+    width: 100%;
+}
+
+
+.mission_statement {
+    text-align: center;
+    padding-top: 150px;
+    line-height: 900%;   
+}
+
+.mission_statement .mission_statement_header h1 {
+    font-size: 3rem;
+}
+
+.mission_statement .mission_statement_content h3 {
+    font-size: 2rem;
+}
+
+
+/* General Font/Heading */
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.the_bakes {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title_text {
+    text-align: center;
+}
+
+.title_text h1, h2 {
+    color: #ab9078;
+    font-weight: 1000;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.bakes_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.bake {
+    width: 400px;
+    position: relative;
+}
+
+
+.bake_image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+.bake_image_focaccia {
+    width: 100%;
+    height: 331px;
+    position: relative;
+    display: block;
+}
+
+.bake_overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.bake_overlay:hover {
+    opacity: 1;
+}
+
+.bake_overlay h3 {
+    color: #ab9078;
+    font-size: 55px;
+    margin-bottom: 15px;
+    font-weight: 1200;
+}
+
+.bake_overlay ul li{
+    color: #ab9078;
+    font-size: 25px;
+    font-weight: 700;
+    
+}
+
+
+
